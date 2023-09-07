@@ -1,0 +1,59 @@
+.card {
+  background: red;
+}
+
+body {
+  background-color: #fff;
+}
+
+#menupic {
+  width: 100%;
+}
+
+#topbar__img {
+  width: 100%;
+}
+
+.menutop {
+  margin-top: -60px;
+  z-index: 100;
+  position: relative;
+}
+.menutop__inner {
+  background-color: white;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+
+h1, h2 {
+  font-family: shrikhand;
+  font-size: 40px;
+}
+
+h5 {
+  font-family: shrikhand;
+  font-size: 19px;
+}
+
+h3, h4 {
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+p {
+  font-family: roboto;
+}
+
+footer {
+  font-family: roboto;
+}
+
+ul {
+  list-style: none;
+}
+
+#footlogo {
+  font-family: shrikhand;
+}
+
+/*# sourceMappingURL=style.css.map */

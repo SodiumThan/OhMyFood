@@ -5,123 +5,129 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bb7874acf.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
         <div class="topbar">
-            <!--icon here-->
-            <img logo> 
+            <i class="fa-solid fa-arrow-left"></i>
+            <h1>ohmyfood</h1>
         </div>
-        <img>
+        <div id="menupic">
+            <img id="topbar__img" src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+        </div>
     </header>
-    <section>
-        <div class="top">
-            <h1>Bastille</h1>
-            <!--icon here-->
+    <section class="menutop">
+        <div class="menutop__inner">
+            <h2>Bastille</h2>
+            <i class="fa-regular fa-heart"></i>
         </div>
     </section>
-    <section>
+    <section class="menuentrees">
         <div class="entrees">
-            <h2>Entrees</h2>
+            <h3>Entrees</h3>
             <div class="foodcard">
-                <div class="foodcardtxt">
-                    <h3>Citrus Squid Carpaccio</h3>
+                <div class="foodcard__txt">
+                    <h4>Citrus Squid Carpaccio</h4>
                     <p>With orange zest</p>
                     <p>25€</p>
                 </div>
-                <div class="tick">
-                    <!--icon here-->
+                <div class="foodcard__tick">
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
             </div>
             <div class="foodcard">
                 <div class="foodcardtxt">
-                    <h3>Grandmother's Vegetable Soup</h3>
+                    <h4>Grandmother's Vegetable Soup</h4>
                     <p>Carrots, parsnips, Jerusalem artichoke</p>
                     <p>35€</p>
                 </div>
                 <div class="tick">
-                    <!--icon here-->
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
             </div>
             <div class="foodcard">
                 <div class="foodcardtxt">
-                    <h3>Onion Soup</h3>
-                    <p>Revisted</p>
+                    <h4>Onion Soup</h4>
+                    <p>Revisited</p>
                     <p>20€</p>
                 </div>
                 <div class="tick">
-                    <!--icon here-->
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="Mains">
-            <h2>Main Dish</h2>
+    <section class="menumain">
+        <div class="mains">
+            <h3>Main Dish</h3>
             <div class="foodcard">
                 <div class="foodcardtxt">
-                    <h3>Scallops</h3>
+                    <h4>Scallops</h4>
                     <p>With mashed parsnip</p>
                     <p>40€</p>
                 </div>
                 <div class="tick">
-                    <!--icon here-->
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
             </div>
             <div class="foodcard">
                 <div class="foodcardtxt">
-                    <h3>Magret de Canard</h3>
+                    <h4>Magret de Canard</h4>
                     <p>With mashed potatoes</p>
                     <p>35€</p>
                 </div>
                 <div class="tick">
-                    <!--icon here-->
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
             </div>
             <div class="foodcard">
                 <div class="foodcardtxt">
-                    <h3>Game Hen</h3>
+                    <h4>Game Hen</h4>
                     <p>With vegetable gnocchis</p>
                     <p>44€</p>
                 </div>
                 <div class="tick">
-                    <!--icon here-->
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="Dessert">
-            <h2>Desserts</h2>
+    <section class="menubottom">
+        <div class="dessert">
+            <h3>Desserts</h3>
             <div class="foodcard">
                 <div class="foodcardtxt">
-                    <h3>Floral Ice Cream</h3>
+                    <h4>Floral Ice Cream</h4>
                     <p>With hazelnut butter</p>
                     <p>18€</p>
                 </div>
                 <div class="tick">
-                    <!--icon here-->
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
             </div>
             <div class="foodcard">
                 <div class="foodcardtxt">
-                    <h3>Chocolate Lava Cake</h3>
+                    <h4>Chocolate Lava Cake</h4>
                     <p>Revisited</p>
                     <p>22€</p>
                 </div>
                 <div class="tick">
-                    <!--icon here-->
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
             </div>
             <div class="foodcard">
                 <div class="foodcardtxt">
-                    <h3>Napolean</h3>
+                    <h4>Napolean</h4>
                     <p>With blueberries and marzipan</p>
                     <p>23€</p>
                 </div>
                 <div class="tick">
-                    <!--icon here-->
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
             </div>
         </div>
@@ -130,10 +136,12 @@
         </div>
     </section>
     <footer>
-        <div class="logo"></div>
+        <div>
+            <h5>ohmyfood</h5>
+        </div>
         <ul>
-            <li><!--icon here-->Suggest a restaurant</li>
-            <li><!--icon here-->Become a partner</li>
+            <li><i class="fa-solid fa-utensils"></i>Suggest a restaurant</li>
+            <li><i class="fa-solid fa-handshake-angle"></i>Become a partner</li>
             <li>Legal</li>
             <li>Contact</li>
         </ul>
