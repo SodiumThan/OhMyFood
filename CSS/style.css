@@ -3,11 +3,19 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #EDEDED;
+}
+
+header {
+  background-color: white;
 }
 
 #menupic {
   width: 100%;
+}
+
+.topbar {
+  background-color: white;
 }
 
 #topbar__img {
@@ -20,14 +28,67 @@ body {
   position: relative;
 }
 .menutop__inner {
-  background-color: white;
+  background-color: #EDEDED;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+}
+
+.card-food {
+  background-color: white;
+  height: 86px;
+  width: 85%;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  box-shadow: 2.5px 2.5px 18px #DCDCDC;
+}
+.card-food__txt {
+  height: 71px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: -19px;
+}
+.card-food__title {
+  top: 11px;
+}
+.card-food__details {
+  display: flex;
+  gap: 61%;
+  margin-top: -26px;
+}
+.card-food__tick {
+  margin-left: 80%;
+  margin-top: -70px;
+}
+.card-food__price {
+  margin-left: 90%;
+  margin-top: -54px;
+}
+
+.button {
+  color: white;
+  background-color: purple;
+  font-family: roboto;
+  height: 50px;
+  width: 150px;
+  margin-left: 28%;
+  border-radius: 50px;
+  border-style: none;
+}
+
+.button-wide {
+  width: 300px;
 }
 
 h1, h2 {
   font-family: shrikhand;
   font-size: 40px;
+}
+
+#homeheader {
+  font-family: Roboto;
 }
 
 h5 {
@@ -44,16 +105,20 @@ p {
   font-family: roboto;
 }
 
-footer {
-  font-family: roboto;
-}
-
 ul {
   list-style: none;
 }
 
-#footlogo {
-  font-family: shrikhand;
+footer {
+  background-color: #353535;
+  font-family: roboto;
+  color: white;
+  padding-bottom: 35px;
+}
+
+.footerlogo {
+  position: relative;
+  top: 19px;
 }
 
 /*# sourceMappingURL=style.css.map */
