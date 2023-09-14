@@ -2,10 +2,6 @@
   background: red;
 }
 
-body {
-  background-color: #EDEDED;
-}
-
 header {
   background-color: white;
 }
@@ -16,6 +12,13 @@ header {
 
 .topbar {
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topbar__arrow {
+  position: relative;
+  right: 152px;
 }
 
 #topbar__img {
@@ -33,7 +36,7 @@ header {
   border-top-right-radius: 35px;
 }
 
-.card-food {
+.card {
   background-color: white;
   height: 86px;
   width: 85%;
@@ -44,32 +47,81 @@ header {
   border-radius: 20px;
   box-shadow: 2.5px 2.5px 18px #DCDCDC;
 }
-.card-food__txt {
+.card__txt {
   height: 71px;
   width: 95%;
   margin-left: 2.5%;
   margin-top: -19px;
 }
-.card-food__title {
+.card__title {
   top: 11px;
 }
-.card-food__details {
+.card__details {
   display: flex;
   gap: 61%;
   margin-top: -26px;
 }
-.card-food__tick {
+.card__tick {
   margin-left: 80%;
   margin-top: -70px;
 }
-.card-food__price {
+.card__price {
   margin-left: 90%;
   margin-top: -54px;
 }
 
+.card-home {
+  background-color: #F0F0F0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-style: hidden;
+  font-size: 18px;
+  font-weight: 500;
+}
+.card-home__circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background-color: #9356DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: 400px;
+  color: #FFF;
+  margin-left: -15px;
+}
+
+.card-menuselect {
+  height: 60vw;
+}
+
+.card-menuselect__imgcontainer {
+  width: 100%;
+  height: 75%;
+}
+
+.card-menuselect__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-menuselect__txt {
+  height: 25%;
+}
+
+.card-menuselect__icon {
+  position: relative;
+  font-size: 20px;
+  bottom: 62px;
+  margin-left: 88%;
+}
+
 .button {
   color: white;
-  background-color: purple;
+  background-color: #9356DC;
   font-family: roboto;
   height: 50px;
   width: 150px;
@@ -79,7 +131,9 @@ header {
 }
 
 .button-wide {
-  width: 300px;
+  margin-left: 26%;
+  width: 215px;
+  margin-top: 12px;
 }
 
 h1, h2 {
@@ -87,8 +141,53 @@ h1, h2 {
   font-size: 40px;
 }
 
-#homeheader {
+.homeheader {
   font-family: Roboto;
+  font-size: 27px;
+  margin-left: 22%;
+}
+
+.homeheader-alt {
+  margin-left: 22px;
+}
+
+.logowrap {
+  box-shadow: 2.5px 2.5px 18px #B2B2B2;
+  padding-top: 5px;
+  position: relative;
+  z-index: 100;
+}
+
+.homelogo {
+  margin-left: 30%;
+  position: relative;
+  bottom: 11px;
+}
+
+.subwrap {
+  background-color: #E9E9E9;
+  position: relative;
+  bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.topbox {
+  background-color: #F1F0F0;
+  padding-top: 10px;
+  padding-bottom: 55px;
+  position: relative;
+  bottom: 24px;
+}
+
+#topboxtxt {
+  width: 76%;
+  margin-left: 14%;
+  text-align: center;
+  font-size: 17px;
+  color: #7E7E7E;
 }
 
 h5 {
