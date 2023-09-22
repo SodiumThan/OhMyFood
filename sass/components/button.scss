@@ -1,0 +1,39 @@
+.button {
+    color: white;
+    background: linear-gradient(350deg, $colour-primary, $colour-secondary);
+    box-shadow: 2.5px 2.5px 18px #DCDCDC;
+    font-family: roboto;
+    height: 50px;
+    width: 150px;
+    margin-left: 28%;
+    border-radius: 50px;
+    border-style: none;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(350deg, #7037B3, #FA59CE);
+        color: white;
+        box-shadow: 2.5px 2.5px 18px #C0C0C0;
+        border-radius: 50px;
+        transition: opacity 250ms;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+.button-wide {
+    margin-left: 26%;
+    width: 215px;
+    margin-top: 12px;
+}
