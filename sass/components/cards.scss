@@ -52,10 +52,47 @@
             bottom: 62px;
             margin-left: 88%;
         }
+        #hearticon {
+            position: absolute;
+        }
+        #hearticonfill {
+            position: absolute;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-image: linear-gradient($colour-primary, $colour-secondary);
+            opacity: 0;
+            transition: 0.3s ease-out;
+            transform-origin: bottom;
+            &:hover {
+                opacity: 1;
+            }
+        }
 }
 
 .card-menu {
     overflow: hidden;
+    ::before {
+    transform: rotate(343deg);
+    }
+    ::after {
+        transform: rotate(0deg);
+    }
+    &:hover .card-menu__tick {
+        transform:translateX(-100%);
+    }
+    &:hover .card-menu__icon {
+        transform: rotate(720deg);
+        transition: 0.5s;
+    }
+    &:hover &__price {
+        transform:translateX(-185%);
+    }
+    &:hover &__title {
+        width: 70%;
+    }
+    &:hover &__details {
+        width: 70%;
+    }
     &__txt {
         height: 71px;
         width: 95%;
@@ -63,32 +100,55 @@
         margin-top: -19px;
     }
         &__title {
+            width: 87%;
             top: 11px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            transition: 0.7s;
         }
         &__details {
+            width: 87%;
             display: flex;
             gap: 61%;
             margin-top: -26px;
+            transition: 0.7s;
         }
         &__tick {
             color: #FFF;
             background-color: #99E2D0;
             height: 100%;
-            width: 15%;
-            font-size: 35px;
+            width: 22%;
+            font-size: 30px;
             margin-left: 101%;
             position: relative;
             bottom: 78px;
             display: flex;
             justify-content: center;
             align-items: center;
-            &:hover {
-                transform:translateX(-60px);
-                transition: 70ms;
-            }
+            transition: 0.3s;
+        }
+        &__icon {
+            transform: rotate(0deg);
+            transition: 0.5s;
+        
         }
         &__price {
             margin-left: 90%;
             margin-top: -54px;
+            font-weight: 500;
+            transition: 0.35s ease-out;
+            
         }
+}
+
+.truncatedetails {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.truncatetitle {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }

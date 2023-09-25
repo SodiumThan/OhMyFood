@@ -22,9 +22,9 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: linear-gradient(350deg, #7037B3, #FA59CE);
+        background: linear-gradient(350deg, #8D55CE, #FF89DF);
         color: white;
-        box-shadow: 2.5px 2.5px 18px #C0C0C0;
+        box-shadow: 2.5px 2.5px 18px #BBBBBB;
         border-radius: 50px;
         transition: opacity 250ms;
         opacity: 0;
@@ -36,4 +36,15 @@
     margin-left: 26%;
     width: 215px;
     margin-top: 12px;
+}
+
+#hearticon__menu {
+    position: absolute;
+}
+
+#hearticonfill__menu {
+    position: absolute;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient($colour-primary, $colour-secondary);
 }
