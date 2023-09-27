@@ -69,14 +69,38 @@
         }
 }
 
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.card-menu--1 {
+    animation: 2s fadein;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.card-menu--2 {
+    animation: 2s fadein;
+    animation-delay: 1.1s;
+    animation-fill-mode: both;
+}
+
+.card-menu--3 {
+    animation: 2s fadein;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+}
+
 .card-menu {
     overflow: hidden;
-    ::before {
-    transform: rotate(343deg);
-    }
-    ::after {
-        transform: rotate(0deg);
-    }
     &:hover .card-menu__tick {
         transform:translateX(-100%);
     }

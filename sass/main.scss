@@ -6,6 +6,73 @@ header {
     background-color: white;
 }
 
+.loadinganim {
+    margin-left: 45%;
+    margin-top: 47%;
+    z-index: 10;
+    scale: 5;
+    position: fixed;
+    &__outer {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        border-style: dotted;
+        border-width: 6px;
+        border-color: $colour-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient($colour-primary, $colour-secondary);
+        animation: loadingspinner;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+    &__icon {
+        font-size: 23px;
+        animation: iconspin;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    }
+}
+
+@keyframes loadingspinner {
+    0% {
+        transform: rotate(0);
+        backdrop-filter: blur(10px);
+    }
+    50% {
+        transform: rotate(180deg);
+        backdrop-filter: blur(10px);
+    }
+    90% {
+        opacity: 1;
+    }
+    95% {
+        transform: rotate(360deg);
+        display: none;
+        backdrop-filter: blur(10px);
+        opacity: 0.5;
+    }
+    99% {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes iconspin {
+    0% {
+        transform:translateY(-50px);
+    }
+    100% {
+        transform:translateY(0px);
+    }
+}
+
 #menupic {
     width: 100%;
 }
