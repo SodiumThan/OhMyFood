@@ -72,16 +72,19 @@
             }
         }
         .newtag {
-            height: 10%;
-            width: 10%;
+            height: 12%;
+            width: 20%;
             background-color: $colour-tertiary;
             position: relative;
-            margin-left: 85%;
+            margin-left: 77%;
             bottom: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 3.5vw;
+            font-weight: 500;
             border-radius: 5px;
+            color: #217662;
             font-family: Roboto;
         }
         &__title {
