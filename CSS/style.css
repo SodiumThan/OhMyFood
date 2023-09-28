@@ -226,6 +226,11 @@ header {
   background-color: white;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .loadinganim {
   margin-left: 45%;
   margin-top: 47%;
