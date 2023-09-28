@@ -95,6 +95,8 @@ a {
 
 #topbar__img {
     width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
 
 .menutop {
@@ -110,6 +112,7 @@ a {
         position: relative;
         top: 32px;
         margin-left: 19px;
+        margin-right: 52px;
         font-size: 31px;
         margin-bottom: 56px;
     }
@@ -141,6 +144,14 @@ h1, h2 {
 
 .menuheader {
     margin-left: 22px;
+    &__underline {
+        height: 4px;
+        width: 49px;
+        margin-left: 22px;
+        position: relative;
+        bottom: 18px;
+        background-color: $colour-tertiary;
+    }
 }
 
 .logowrap {

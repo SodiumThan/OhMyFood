@@ -257,16 +257,24 @@
 #hearticon__menu {
   position: absolute;
   margin-left: 87%;
-  top: 45px;
+  top: 35px;
+  font-size: 30px;
 }
 
 #hearticonfill__menu {
   position: absolute;
   color: transparent;
+  font-size: 30px;
   -webkit-background-clip: text;
   margin-left: 87%;
-  top: 45px;
+  top: 35px;
   background-image: linear-gradient(#7A42BC, #FF79DA);
+  opacity: 0;
+  transition: 0.3s ease-out;
+  transform-origin: bottom;
+}
+#hearticonfill__menu:hover {
+  opacity: 1;
 }
 
 header {
@@ -360,6 +368,8 @@ a {
 
 #topbar__img {
   width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
 .menutop {
@@ -376,6 +386,7 @@ a {
   position: relative;
   top: 32px;
   margin-left: 19px;
+  margin-right: 52px;
   font-size: 31px;
   margin-bottom: 56px;
 }
@@ -406,6 +417,14 @@ h1, h2 {
 
 .menuheader {
   margin-left: 22px;
+}
+.menuheader__underline {
+  height: 4px;
+  width: 49px;
+  margin-left: 22px;
+  position: relative;
+  bottom: 18px;
+  background-color: #99E2D0;
 }
 
 .logowrap {

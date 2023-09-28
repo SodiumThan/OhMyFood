@@ -54,14 +54,22 @@
 #hearticon__menu {
     position: absolute;
     margin-left: 87%;
-    top: 45px;
+    top: 35px;
+    font-size: 30px;
 }
 
 #hearticonfill__menu {
     position: absolute;
     color: transparent;
+    font-size: 30px;
     -webkit-background-clip: text;
     margin-left: 87%;
-    top: 45px;
+    top: 35px;
     background-image: linear-gradient($colour-primary, $colour-secondary);
+    opacity: 0;
+    transition: 0.3s ease-out;
+    transform-origin: bottom;
+    &:hover {
+        opacity: 1;
+    }
 }
