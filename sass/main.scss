@@ -33,6 +33,7 @@ a {
         animation: loadingspinner;
         animation-duration: 3s;
         animation-fill-mode: both;
+        animation-iteration-count: 1;
     &__icon {
         animation: iconspin;
         animation-duration: 3s;
@@ -95,7 +96,7 @@ a {
 
 #topbar__img {
     width: 100%;
-    height: 350px;
+    height: 62vw;
     object-fit: cover;
 }
 
@@ -110,11 +111,11 @@ a {
     }
     .menutop__title {
         position: relative;
-        top: 32px;
+        top: 45px;
         margin-left: 19px;
         margin-right: 52px;
         font-size: 31px;
-        margin-bottom: 56px;
+        margin-bottom: 70px;
     }
 }
 
@@ -144,6 +145,7 @@ h1, h2 {
 
 .menuheader {
     margin-left: 22px;
+    margin-top: 45px;
     &__underline {
         height: 4px;
         width: 49px;
