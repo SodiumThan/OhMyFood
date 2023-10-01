@@ -33,6 +33,15 @@
     }
 }
 
+:hover.card-home--bck {
+    background-color: hsl(267, 73%, 94%);
+    transition: 0.5s;
+    .card-home__icon {
+        color: $colour-primary;
+        transition: 0.3s;
+    }
+}
+
 .card-menuselect {
     height: 60vw;
     width: 90%;
@@ -89,12 +98,48 @@
             font-family: Roboto;
         }
         &__title {
-            margin-top: 17px;
+            margin-top: 6px;
+            font-size: calc(8px + 3vw);
+            @media all and (min-width: 600px) and (max-width: 992px) {
+                font-size: calc(8px + 1.5vw);
+            }
+            @media all and (min-width: 993px) {
+                font-size: calc(8px + 1.5vw);
+            }
         }
         .locationtxt {
             position: relative;
             bottom: 13px;
+            font-size: calc(4px + 3vw);
+            @media all and (min-width: 600px) and (max-width: 992px) {
+                font-size: calc(4px + 1.5vw);
+            }
+            @media all and (min-width: 993px) {
+                font-size: calc(4px + 1.5vw);
+            }
         }
+}
+
+@media all and (min-width: 993px) {
+    .card-menuselect {
+        height: 24vw;
+        width: 30vw;
+    }
+
+    .card-menuselect--2 {
+        width: 31vw;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 992px) {
+    .card-menuselect--2 {
+        width: 31vw;
+    }
+    
+    .card-menuselect {
+        height: 28vw;
+        width: 31vw;
+    }
 }
 
 @keyframes fadein {

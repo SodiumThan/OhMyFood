@@ -56,6 +56,9 @@
     margin-left: 87%;
     top: 48px;
     font-size: 30px;
+    @media all and (min-width: 993px) {
+        margin-left: 78%;
+    }
 }
 
 #hearticonfill__menu {
@@ -71,5 +74,8 @@
     transform-origin: bottom;
     &:hover {
         opacity: 1;
+    }
+    @media all and (min-width: 993px) {
+        margin-left: 78%;
     }
 }
