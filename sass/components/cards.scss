@@ -62,7 +62,7 @@
         }
         .card-menuselect__icon {
             position: relative;
-            font-size: 20px;
+            font-size: 22px;
             bottom: 62px;
             margin-left: 88%;
         }
@@ -96,6 +96,12 @@
             border-radius: 5px;
             color: #217662;
             font-family: Roboto;
+            @media all and (min-width: 993px) {
+                font-size: 1.2vw;
+            }
+            @media all and (min-width: 600px) and (max-width: 992px) {
+                font-size: 1.8vw;
+            }
         }
         &__title {
             margin-top: 6px;
@@ -104,7 +110,8 @@
                 font-size: calc(8px + 1.5vw);
             }
             @media all and (min-width: 993px) {
-                font-size: calc(8px + 1.5vw);
+                font-size: calc(1px + 1.5vw);
+                margin-bottom: 22px;
             }
         }
         .locationtxt {
@@ -115,19 +122,20 @@
                 font-size: calc(4px + 1.5vw);
             }
             @media all and (min-width: 993px) {
-                font-size: calc(4px + 1.5vw);
+                font-size: calc(0px + 1.5vw);
+                bottom: 22px;
             }
         }
 }
 
 @media all and (min-width: 993px) {
     .card-menuselect {
-        height: 24vw;
-        width: 30vw;
+        height: 17vw;
+        width: 21vw;
     }
 
     .card-menuselect--2 {
-        width: 31vw;
+        width: 21vw;
     }
 }
 
@@ -138,7 +146,7 @@
     
     .card-menuselect {
         height: 28vw;
-        width: 31vw;
+        width: 36vw;
     }
 }
 
