@@ -2,6 +2,7 @@
 @import "./components/cards"; 
 @import "./components/button.scss";
 @import "./layout/mediaqueries.scss";
+@import "./components/bulletlist.scss";
 
 header {
     background-color: white;
@@ -17,6 +18,7 @@ a {
     margin-top: 25%;
     z-index: 101;
     position: fixed;
+    pointer-events: none;
     @media all and (min-width: 993px) {
             scale: 0.5;
             bottom: 10%;
@@ -39,12 +41,7 @@ a {
         animation-duration: 3s;
         animation-fill-mode: both;
         animation-iteration-count: 1;
-    &__icon {
-        animation: iconspin;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
     }
-}
 }
 
 @keyframes loadingspinner {
@@ -63,6 +60,7 @@ a {
         transform: rotate(360deg);
         backdrop-filter: blur(10px);
         opacity: 0.5;
+        scale: 1;
     }
     99% {
         opacity: 0;
@@ -72,15 +70,7 @@ a {
         display: none;
         opacity: 0;
         transform: rotate(360deg);
-    }
-}
-
-@keyframes iconspin {
-    0% {
-        transform:translateY(-50px);
-    }
-    100% {
-        transform:translateY(0px);
+        scale: 0;
     }
 }
 
@@ -104,6 +94,7 @@ a {
     width: 100%;
     height: 62vw;
     object-fit: cover;
+    transition: 100ms;
     @media all and (min-width: 993px) {
         height: 22vw;
     }
@@ -128,8 +119,9 @@ a {
         margin-right: 52px;
         font-size: 31px;
         margin-bottom: 70px;
+        transition: ease all 0.5s;
         @media all and (min-width: 993px) {
-            margin-left: 166px;
+            margin-left: 18%;
         }
     }
 }
@@ -168,6 +160,42 @@ h1, h2 {
         position: relative;
         bottom: 18px;
         background-color: $colour-tertiary;
+    }
+}
+
+.menuentrees, .menumain, .menubottom {
+    transition: ease-out 0.4s;
+    @media all and (min-width: 993px) {
+        margin-left: 17%;
+        margin-right: 17%;
+    }
+}
+
+@media all and (min-width: 993px) {
+    .howitworksflex {
+        display: flex;
+        position: relative;
+        right: 4%
+    }
+}
+
+.restaurantsflex {
+    transition: ease all 0.5s;
+    @media all and (min-width: 600px) and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-flow: wrap;
+        margin-left: 10%;
+        margin-right: 10%;
+        column-gap: 7%;
+    }
+    @media all and (min-width: 993px) {
+        display: flex;
+        height: 90%;
+        width: 80%;
+        margin-left: 3%;
+        column-gap: 3.5%;
     }
 }
 
@@ -234,22 +262,6 @@ h3, h4 {
 
 p {
     font-family: roboto;
-}
-
-ul {
-    list-style: none;
-    margin-top: -14px;
-    @media all and (min-width: 993px) {
-        display: flex;
-        gap: 10%;
-        margin-left: 20%;
-        position: relative;
-        bottom: 12px;
-    }
-}
-
-li {
-    margin-bottom: 8px;
 }
 
 footer {

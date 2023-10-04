@@ -18,6 +18,7 @@
     border-style: hidden;
     font-size: 18px;
     font-weight: 500;
+    transition: 0.5s;
     .card-home__circle {
         height: 30px;
         width: 30px;
@@ -31,14 +32,15 @@
         color: #FFF;
         margin-left: -15px;
     }
+    &__icon {
+        transition: 0.3s;
+    }
 }
 
 :hover.card-home--bck {
     background-color: hsl(267, 73%, 94%);
-    transition: 0.5s;
     .card-home__icon {
         color: $colour-primary;
-        transition: 0.3s;
     }
 }
 

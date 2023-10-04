@@ -56,8 +56,9 @@
     margin-left: 87%;
     top: 48px;
     font-size: 30px;
+    transition: ease all 0.5s;
     @media all and (min-width: 993px) {
-        margin-left: 78%;
+        margin-left: 73.5%;
     }
 }
 
@@ -72,10 +73,11 @@
     opacity: 0;
     transition: 0.3s ease-out;
     transform-origin: bottom;
+    transition: ease all 0.5s;
     &:hover {
         opacity: 1;
     }
     @media all and (min-width: 993px) {
-        margin-left: 78%;
+        margin-left: 73.5%;
     }
 }
