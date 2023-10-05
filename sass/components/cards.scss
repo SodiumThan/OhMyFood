@@ -57,6 +57,7 @@
             height: 100%;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
+            &--4 {}
         }
         .card-menuselect__txt {
             height: 25%;
@@ -199,6 +200,10 @@
 
 .card-menu {
     overflow: hidden;
+    width: 90%;
+    @media all and (min-width: 600px) and (max-width: 992px) {
+        width: 86%
+    }
     &:hover .card-menu__tick {
         transform:translateX(-100%);
     }
