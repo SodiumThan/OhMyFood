@@ -64,11 +64,13 @@
         }
         .card-menuselect__icon {
             position: relative;
-            font-size: calc(3px + 6vw);
-            bottom: 62px;
-            margin-left: 88%;
+            display: flex;
+            font-size: calc(3px + 7vw);
+            bottom: 70px;
+            margin-left: 85%;
             @media all and (min-width: 993px) {
-                font-size: calc(3px + 1.8vw)
+                font-size: calc(3px + 1.8vw);
+                bottom: 75px;
             }
             @media all and (min-width: 600px) and (max-width: 992px) {
                 font-size: calc(2px + 3vw);
@@ -207,8 +209,9 @@
         transform:translateX(-100%);
     }
     &:hover .card-menu__icon {
-        transform: rotate(720deg);
-        transition: 0.5s;
+        transform: rotate(360deg);
+        transition: 0.7s;
+        transition-delay: 0.05s;
     }
     &:hover &__price {
         transform:translateX(-215%);
@@ -254,18 +257,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: 0.3s;
+            transition: ease-in 0.3s;
         }
         &__icon {
             transform: rotate(0deg);
-            transition: 0.5s;
+            transition: 0.24s;
         
         }
         &__price {
             margin-left: 90%;
             margin-top: -54px;
             font-weight: 500;
-            transition: 0.35s ease-out;
+            transition: 0.39s ease-out;
             
         }
 }
