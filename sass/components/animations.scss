@@ -1,0 +1,60 @@
+.loadinganim {
+    margin-left: 25%;
+    margin-top: 25%;
+    z-index: 101;
+    position: fixed;
+    pointer-events: none;
+    @media all and (min-width: 993px) {
+            scale: 0.5;
+            bottom: 10%;
+        }
+    &__outer {
+        height: 50vw;
+        width: 50vw;
+        border-radius: 50vw;
+        border-style: dotted;
+        border-width: 3vw;
+        border-color: $colour-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient($colour-primary, $colour-secondary);
+        font-size: 25vw;
+        animation: loadingspinner;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+    }
+}
+
+@keyframes loadingspinner {
+    0% {
+        transform: rotate(0);
+        backdrop-filter: blur(10px);
+    }
+    50% {
+        transform: rotate(180deg);
+        backdrop-filter: blur(10px);
+    }
+    90% {
+        opacity: 1;
+    }
+    95% {
+        transform: rotate(360deg);
+        backdrop-filter: blur(10px);
+        opacity: 0.5;
+        scale: 1;
+    }
+    99% {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+    100% {
+        display: none;
+        opacity: 0;
+        transform: rotate(360deg);
+        scale: 0;
+    }
+}

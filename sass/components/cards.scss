@@ -212,13 +212,16 @@
         transition: 0.5s;
     }
     &:hover &__price {
-        transform:translateX(-185%);
+        transform:translateX(-215%);
+        @media all and (min-width: 993px) {
+            transform:translateX(-160%);
+        }
     }
     &:hover &__title {
-        width: 70%;
+        width: 67%;
     }
     &:hover &__details {
-        width: 70%;
+        width: 67%;
     }
     &__txt {
         height: 71px;
