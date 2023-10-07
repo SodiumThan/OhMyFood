@@ -10,3 +10,12 @@
     overflow: hidden;
    -webkit-line-clamp: 2;
 }
+
+@mixin hearticonmediaquery {
+    @media all and (min-width: 993px) {
+        bottom: 52px;
+    }
+    @media all and (min-width: 600px) and (max-width: 992px) {
+        bottom: 49px;
+    }
+}

@@ -287,10 +287,10 @@ footer #footer__icon2 {
   transition: 0.3s;
 }
 
-:hover.card-home--bck {
+:hover.card-home--bck, :active.card-home--bck {
   background-color: hsl(267, 73%, 94%);
 }
-:hover.card-home--bck .card-home__icon {
+:hover.card-home--bck .card-home__icon, :active.card-home--bck .card-home__icon {
   color: #7A42BC;
 }
 
@@ -315,36 +315,56 @@ footer #footer__icon2 {
 }
 .card-menuselect .card-menuselect__icon {
   position: relative;
-  display: flex;
-  font-size: calc(3px + 7vw);
-  bottom: 70px;
+  font-size: calc(1px + 7vw);
   margin-left: 85%;
 }
 @media all and (min-width: 993px) {
   .card-menuselect .card-menuselect__icon {
-    font-size: calc(3px + 1.8vw);
-    bottom: 75px;
+    font-size: calc(1px + 1.8vw);
   }
 }
 @media all and (min-width: 600px) and (max-width: 992px) {
   .card-menuselect .card-menuselect__icon {
-    font-size: calc(2px + 3vw);
+    font-size: calc(1px + 3vw);
   }
 }
 .card-menuselect .hearticon {
   position: absolute;
+  bottom: 43px;
+}
+@media all and (min-width: 993px) {
+  .card-menuselect .hearticon {
+    bottom: 52px;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 992px) {
+  .card-menuselect .hearticon {
+    bottom: 49px;
+  }
 }
 .card-menuselect .hearticonfill {
   position: absolute;
+  bottom: 43px;
   color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   background-image: linear-gradient(#7A42BC, #FF79DA);
   opacity: 0;
   transition: 0.3s ease-out;
   transform-origin: bottom;
 }
-.card-menuselect .hearticonfill:hover {
+.card-menuselect .hearticonfill:hover, .card-menuselect .hearticonfill :active {
   opacity: 1;
+}
+@media all and (min-width: 993px) {
+  .card-menuselect .hearticonfill {
+    bottom: 52px;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 992px) {
+  .card-menuselect .hearticonfill {
+    bottom: 49px;
+  }
 }
 .card-menuselect .newtag {
   height: 12%;
@@ -468,27 +488,27 @@ footer #footer__icon2 {
     width: 86%;
   }
 }
-.card-menu:hover .card-menu__tick {
+.card-menu:hover .card-menu__tick, .card-menu :active.card-menu__tick {
   transform: translateX(-100%);
 }
-.card-menu:hover .card-menu__icon {
+.card-menu:hover .card-menu__icon, .card-menu :active.card-menu__icon {
   transform: rotate(360deg);
   transition: 0.3s;
   transition-delay: 0.2s;
 }
-.card-menu:hover .card-menu__price {
+.card-menu:hover .card-menu__price, .card-menu :active.card-menu__price {
   transform: translateX(-215%);
 }
 @media all and (min-width: 993px) {
-  .card-menu:hover .card-menu__price {
+  .card-menu:hover .card-menu__price, .card-menu :active.card-menu__price {
     transform: translateX(-160%);
   }
 }
-.card-menu:hover .card-menu__title {
-  width: 67%;
+.card-menu:hover .card-menu__title, .card-menu :active.card-menu__title {
+  width: 65%;
 }
-.card-menu:hover .card-menu__details {
-  width: 67%;
+.card-menu:hover .card-menu__details, .card-menu :active.card-menu__details {
+  width: 65%;
 }
 .card-menu__txt {
   height: 71px;
@@ -506,6 +526,7 @@ footer #footer__icon2 {
 }
 .card-menu__details {
   width: 87%;
+  font-size: 16.5px;
   display: flex;
   gap: 61%;
   margin-top: -26px;
@@ -531,6 +552,7 @@ footer #footer__icon2 {
 }
 .card-menu__price {
   margin-left: 90%;
+  font-size: 16.5px;
   margin-top: -51px;
   font-weight: 500;
   transition: 0.39s ease-out;
@@ -539,10 +561,10 @@ footer #footer__icon2 {
 .card-menu--large {
   height: 110px;
 }
-.card-menu--large:hover .card-menu__details--large {
+.card-menu--large:hover .card-menu__details--large, .card-menu--large :active.card-menu__details--large {
   width: 63%;
 }
-.card-menu--large:hover .card-menu__title--large {
+.card-menu--large:hover .card-menu__title--large, .card-menu--large :active.card-menu__title--large {
   width: 75%;
 }
 .card-menu--large .card-menu__details--large {
@@ -594,7 +616,7 @@ footer #footer__icon2 {
   position: relative;
   z-index: 1;
 }
-.button:hover::after {
+.button:hover::after, .button :active.button::after {
   opacity: 1;
 }
 .button::after {
@@ -651,6 +673,7 @@ footer #footer__icon2 {
   color: transparent;
   font-size: 30px;
   -webkit-background-clip: text;
+  background-clip: text;
   margin-left: 85%;
   top: 48px;
   background-image: linear-gradient(#7A42BC, #FF79DA);
@@ -659,7 +682,7 @@ footer #footer__icon2 {
   transform-origin: bottom;
   transition: ease all 0.5s;
 }
-#hearticonfill__menu:hover {
+#hearticonfill__menu:hover, #hearticonfill__menu :active#hearticonfill__menu {
   opacity: 1;
 }
 @media all and (min-width: 993px) {
@@ -711,6 +734,7 @@ li {
   align-items: center;
   color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   background-image: linear-gradient(#7A42BC, #FF79DA);
   font-size: 25vw;
   animation: loadingspinner;

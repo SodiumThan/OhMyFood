@@ -37,7 +37,7 @@
     }
 }
 
-:hover.card-home--bck {
+:hover.card-home--bck, :active.card-home--bck {
     background-color: hsl(267, 73%, 94%);
     .card-home__icon {
         color: $colour-primary;
@@ -64,33 +64,36 @@
         }
         .card-menuselect__icon {
             position: relative;
-            display: flex;
-            font-size: calc(3px + 7vw);
-            bottom: 70px;
+            font-size: calc(1px + 7vw);
             margin-left: 85%;
             @media all and (min-width: 993px) {
-                font-size: calc(3px + 1.8vw);
-                bottom: 75px;
+                font-size: calc(1px + 1.8vw);
             }
             @media all and (min-width: 600px) and (max-width: 992px) {
-                font-size: calc(2px + 3vw);
+                font-size: calc(1px + 3vw);
             }
         }
         .hearticon {
             position: absolute;
+            bottom: 43px;
+            @include hearticonmediaquery;
         }
         .hearticonfill {
             position: absolute;
+            bottom: 43px;
             color: transparent;
             -webkit-background-clip: text;
+            background-clip: text;
             background-image: linear-gradient($colour-primary, $colour-secondary);
             opacity: 0;
             transition: 0.3s ease-out;
             transform-origin: bottom;
-            &:hover {
+            &:hover, :active {
                 opacity: 1;
             }
+            @include hearticonmediaquery;
         }
+
         .newtag {
             height: 12%;
             width: 20%;
@@ -205,25 +208,25 @@
     @media all and (min-width: 600px) and (max-width: 992px) {
         width: 86%
     }
-    &:hover .card-menu__tick {
+    &:hover .card-menu__tick, :active.card-menu__tick {
         transform:translateX(-100%);
     }
-    &:hover .card-menu__icon {
+    &:hover .card-menu__icon, :active.card-menu__icon {
         transform: rotate(360deg);
         transition: 0.3s;
         transition-delay: 0.2s;
     }
-    &:hover &__price {
+    &:hover &__price, :active.card-menu__price {
         transform:translateX(-215%);
         @media all and (min-width: 993px) {
             transform:translateX(-160%);
         }
     }
-    &:hover &__title {
-        width: 67%;
+    &:hover &__title, :active.card-menu__title {
+        width: 65%;
     }
-    &:hover &__details {
-        width: 67%;
+    &:hover &__details, :active.card-menu__details {
+        width: 65%;
     }
     &__txt {
         height: 71px;
@@ -241,6 +244,7 @@
         }
         &__details {
             width: 87%;
+            font-size: 16.5px;
             display: flex;
             gap: 61%;
             margin-top: -26px;
@@ -267,6 +271,7 @@
         }
         &__price {
             margin-left: 90%;
+            font-size: 16.5px;
             margin-top: -51px;
             font-weight: 500;
             transition: 0.39s ease-out;
@@ -276,10 +281,10 @@
 
 .card-menu--large {
     height: 110px;
-    &:hover .card-menu__details--large {
+    &:hover .card-menu__details--large, :active.card-menu__details--large {
         width: 63%;
     }
-    &:hover .card-menu__title--large {
+    &:hover .card-menu__title--large, :active.card-menu__title--large {
         width: 75%;
     }
     .card-menu__details--large {

@@ -20,6 +20,7 @@
         align-items: center;
         color: transparent;
         -webkit-background-clip: text;
+        background-clip: text;
         background-image: linear-gradient($colour-primary, $colour-secondary);
         font-size: 25vw;
         animation: loadingspinner;

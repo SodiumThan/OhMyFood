@@ -10,7 +10,7 @@
     border-style: none;
     position: relative;
     z-index: 1;
-    &:hover {
+    &:hover, :active.button {
         &::after {
             opacity: 1;
         }
@@ -68,6 +68,7 @@
     color: transparent;
     font-size: 30px;
     -webkit-background-clip: text;
+    background-clip: text;
     margin-left: 85%;
     top: 48px;
     background-image: linear-gradient($colour-primary, $colour-secondary);
@@ -75,7 +76,7 @@
     transition: 0.3s ease-out;
     transform-origin: bottom;
     transition: ease all 0.5s;
-    &:hover {
+    &:hover, :active#hearticonfill__menu {
         opacity: 1;
     }
     @media all and (min-width: 993px) {
