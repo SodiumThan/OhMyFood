@@ -210,8 +210,8 @@
     }
     &:hover .card-menu__icon {
         transform: rotate(360deg);
-        transition: 0.7s;
-        transition-delay: 0.05s;
+        transition: 0.3s;
+        transition-delay: 0.2s;
     }
     &:hover &__price {
         transform:translateX(-215%);
@@ -276,14 +276,26 @@
 
 .card-menu--large {
     height: 110px;
-}
-
-.card-menu__details--large {
-    
-}
-
-.card-menu__details--large {
-    margin-top: -2px;
+    &:hover .card-menu__details--large {
+        width: 63%;
+    }
+    &:hover .card-menu__title--large {
+        width: 75%;
+    }
+    .card-menu__details--large {
+        margin-top: -21px;
+        width: 82%;
+        transition: 0.7s;
+        @include truncatetext;
+    }
+    .card-menu__title--large {
+        width: 80%;
+        position: relative;
+        top: 15px;
+        margin-bottom: 37px;
+        max-height: 35px;
+        min-height: 35px;
+    }
 }
 
 .truncatedetails {
@@ -292,4 +304,8 @@
 
 .truncatetitle {
     @include truncatetext;
+}
+
+.truncatetitle--large {
+    @include truncatelarge;
 }

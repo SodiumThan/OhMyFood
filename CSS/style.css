@@ -56,7 +56,7 @@ p {
 }
 
 .menutop {
-  margin-top: -60px;
+  margin-top: -68px;
   z-index: 100;
   position: relative;
 }
@@ -64,6 +64,7 @@ p {
   background-color: white;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+  padding-bottom: 1px;
 }
 .menutop .menutop__title {
   position: relative;
@@ -71,7 +72,7 @@ p {
   margin-left: 25px;
   margin-right: 62px;
   font-size: 31px;
-  margin-bottom: 84px;
+  margin-bottom: 40px;
   transition: ease all 0.5s;
 }
 @media all and (min-width: 993px) {
@@ -160,7 +161,7 @@ footer {
   font-family: roboto;
   color: white;
   padding-top: 1px;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
 }
 footer .footer__logo {
   position: relative;
@@ -471,8 +472,8 @@ header {
 }
 .card-menu:hover .card-menu__icon {
   transform: rotate(360deg);
-  transition: 0.7s;
-  transition-delay: 0.05s;
+  transition: 0.3s;
+  transition-delay: 0.2s;
 }
 .card-menu:hover .card-menu__price {
   transform: translateX(-215%);
@@ -537,9 +538,27 @@ header {
 .card-menu--large {
   height: 110px;
 }
-
-.card-menu__details--large {
-  margin-top: -2px;
+.card-menu--large:hover .card-menu__details--large {
+  width: 63%;
+}
+.card-menu--large:hover .card-menu__title--large {
+  width: 75%;
+}
+.card-menu--large .card-menu__details--large {
+  margin-top: -21px;
+  width: 82%;
+  transition: 0.7s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card-menu--large .card-menu__title--large {
+  width: 80%;
+  position: relative;
+  top: 15px;
+  margin-bottom: 37px;
+  max-height: 35px;
+  min-height: 35px;
 }
 
 .truncatedetails {
@@ -552,6 +571,13 @@ header {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.truncatetitle--large {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
 }
 
 .button {
@@ -597,8 +623,8 @@ header {
 }
 
 .button-order {
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 35px;
+  margin-bottom: 75px;
 }
 
 .buttonshell {
@@ -624,7 +650,7 @@ header {
   color: transparent;
   font-size: 30px;
   -webkit-background-clip: text;
-  margin-left: 87%;
+  margin-left: 85%;
   top: 48px;
   background-image: linear-gradient(#7A42BC, #FF79DA);
   opacity: 0;
