@@ -3,10 +3,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 86px;
+    position: relative;
+    top: 2px;
     &__arrow {
         position: absolute;
         left: 5%;
         font-size: 25px;
+        margin-top: 12px;
+    }
+    &__logo {
+        position: relative;
+        top: 6px;
     }
 }
 
