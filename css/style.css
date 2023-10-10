@@ -305,8 +305,9 @@ footer #footer__icon2 {
 }
 
 .card-menuselect {
-  height: 64vw;
+  height: 65vw;
   width: 90%;
+  margin-bottom: 26px;
 }
 .card-menuselect .card-menuselect__imgcontainer {
   width: 100%;
@@ -435,6 +436,22 @@ footer #footer__icon2 {
     font-size: calc(0px + 1.3vw);
     bottom: 26px;
   }
+}
+
+.card-menuselect__img--1 {
+  object-position: 0% 99%;
+}
+
+.card-menuselect__img--2 {
+  object-position: 0% 61%;
+}
+
+.card-menuselect__img--3 {
+  object-position: 0% 100%;
+}
+
+.card-menuselect__img--4 {
+  object-position: 0% 97%;
 }
 
 @media all and (min-width: 993px) {
