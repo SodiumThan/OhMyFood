@@ -281,6 +281,7 @@ footer #footer__icon2 {
   border-style: hidden;
   font-size: 18px;
   font-weight: 500;
+  transition: 0.5s;
 }
 .card-home .card-home__circle {
   height: 30px;
