@@ -64,6 +64,7 @@
 }
 
 .howitworksflex {
+    transition: 0.5s;
     @media all and (min-width: 600px) and (max-width: 992px) {
         margin-right: 4%;
         margin-left: 4%;
