@@ -57,6 +57,9 @@
 
 .menuentrees, .menumain, .menubottom {
     transition: ease-out 0.4s;
+    @media all and (min-width: 600px) and (max-width: 992px) {
+        margin-left: 3%;
+    }
     @media all and (min-width: 993px) {
         margin-left: 17%;
         margin-right: 17%;
