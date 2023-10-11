@@ -282,18 +282,12 @@
             align-items: center;
             transition: ease-in 0.3s;
         }
-        &__icon {
-            transform: rotate(0deg);
-            transition: 0.24s;
-        
-        }
         &__price {
             margin-left: 90%;
             font-size: 16.5px;
             margin-top: -51px;
             font-weight: 500;
             transition: 0.39s ease-out;
-            
         }
 }
 

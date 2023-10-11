@@ -573,10 +573,6 @@ footer #footer__icon2 {
   align-items: center;
   transition: ease-in 0.3s;
 }
-.card-menu__icon {
-  transform: rotate(0deg);
-  transition: 0.24s;
-}
 .card-menu__price {
   margin-left: 90%;
   font-size: 16.5px;
