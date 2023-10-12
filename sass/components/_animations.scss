@@ -63,3 +63,114 @@
         transform: scale(0);
     }
 }
+
+@keyframes fadeinblock {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blockanim1 {
+    animation: fadeinblock;
+    animation-fill-mode: both;
+}
+
+.blockanim2 {
+    animation: fadeinblock;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.blockanim3 {
+    animation: fadeinblock;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.card-menu--1 {
+    animation: 1.5s fadein;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+.card-menu--2 {
+    animation: 1.5s fadein;
+    animation-delay: 0.45s;
+    animation-fill-mode: both;
+}
+
+.card-menu--3 {
+    animation: 1.5s fadein;
+    animation-delay: 0.55s;
+    animation-fill-mode: both;
+}
+
+.card-menu--4 {
+    animation: 1.5s fadein;
+    animation-delay: 0.65s;
+    animation-fill-mode: both;
+}
+
+.card-menublock2--1 {
+    animation: 2s fadein;
+    animation-delay: 1.3s;
+    animation-fill-mode: both;
+}
+
+.card-menublock2--2 {
+    animation: 1.5s fadein;
+    animation-delay: 1.45s;
+    animation-fill-mode: both;
+}
+
+.card-menublock2--3 {
+    animation: 1.5s fadein;
+    animation-delay: 1.55s;
+    animation-fill-mode: both;
+}
+
+.card-menublock2--4 {
+    animation: 1.5s fadein;
+    animation-delay: 1.65s;
+    animation-fill-mode: both;
+}
+
+.card-menublock3--1 {
+    animation: 1.5s fadein;
+    animation-delay: 2.3s;
+    animation-fill-mode: both;
+}
+
+.card-menublock3--2 {
+    animation: 1.5s fadein;
+    animation-delay: 2.45s;
+    animation-fill-mode: both;
+}
+
+.card-menublock3--3 {
+    animation: 1.5s fadein;
+    animation-delay: 2.55s;
+    animation-fill-mode: both;
+}
+
+.card-menublock3--4 {
+    animation: 1.5s fadein;
+    animation-delay: 2.65s;
+    animation-fill-mode: both;
+}
